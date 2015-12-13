@@ -457,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Flag Table/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cynthia.whitlatch.Flag-Table";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -468,6 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Flag Table/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cynthia.whitlatch.Flag-Table";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -541,6 +543,7 @@
 				3D1FFF6E1C1E3127008DF186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D1FFF6F1C1E3127008DF186 /* Build configuration list for PBXNativeTarget "Flag TableTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +552,7 @@
 				3D1FFF711C1E3127008DF186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D1FFF721C1E3127008DF186 /* Build configuration list for PBXNativeTarget "Flag TableUITests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +561,7 @@
 				3D1FFF741C1E3127008DF186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
