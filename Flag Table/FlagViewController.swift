@@ -9,12 +9,11 @@
 import UIKit
 
 class FlagViewController: UIViewController {
+    
+    @IBOutlet weak var flagImage: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-
-
-
 }

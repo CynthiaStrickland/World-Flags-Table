@@ -123,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				3D1FFF4B1C1E3127008DF186 /* Main.storyboard */,
+				3D1FFF501C1E3127008DF186 /* LaunchScreen.storyboard */,
 				3D1FFF471C1E3127008DF186 /* AppDelegate.swift */,
 				3D1FFF751C1E3168008DF186 /* FlagTableViewController.swift */,
 				3D1FFF771C1E316C008DF186 /* FlagTableViewCell.swift */,
@@ -153,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				3D1FFF4E1C1E3127008DF186 /* Assets.xcassets */,
-				3D1FFF501C1E3127008DF186 /* LaunchScreen.storyboard */,
 				3D1FFF531C1E3127008DF186 /* Info.plist */,
 				3D1FFF871C1E31B6008DF186 /* spain.png */,
 				3D1FFF7D1C1E31A9008DF186 /* canada.png */,
@@ -363,7 +363,6 @@
 				3D1FFF511C1E3127008DF186 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = "Flag Table";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
