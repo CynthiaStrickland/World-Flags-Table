@@ -85,8 +85,11 @@ class FlagTableViewController: UITableViewController {
     // MARK: - Navigation
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-      
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+
+        let cell = tableView.dequeueReusableCellWithIdentifier("flag", forIndexPath: indexPath)
+        let flagImage = self.countries[indexPath.row]
+        let detailViewController = ((segue.destinationViewController) as! FlagViewController)
+        detailViewController.flagImage = flagImage
+        }
     }
-}
+
