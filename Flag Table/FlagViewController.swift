@@ -7,13 +7,25 @@
 //
 
 import UIKit
+import Foundation
+
 
 class FlagViewController: UIViewController {
+    
+    var flagIcon: FlagTableViewController?
     
     @IBOutlet weak var flagImage: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+    
+        guard let flagIcon = flagIcon else { return }
+        
+        if let iconImage = flagIcon.image {
+            flagImage.image = iconImage
+        }
     }
 }

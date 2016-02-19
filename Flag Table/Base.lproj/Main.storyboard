@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="self" rowHeight="86" id="Wuy-eO-VM7" customClass="FlagTableViewCell" customModule="Flag_Table" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="flag" rowHeight="86" id="Wuy-eO-VM7" customClass="FlagTableViewCell" customModule="Flag_Table" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="86"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wuy-eO-VM7" id="kYM-Nk-7AN">
@@ -65,7 +65,7 @@
         <!--Flag View Controller-->
         <scene sceneID="VSm-MK-ARC">
             <objects>
-                <viewController id="PGZ-XP-ErR" customClass="FlagViewController" customModule="Flag_Table" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FlagViewController" id="PGZ-XP-ErR" customClass="FlagViewController" customModule="Flag_Table" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z9Q-eK-8So"/>
                         <viewControllerLayoutGuide type="bottom" id="ODb-nb-LNz"/>
@@ -74,13 +74,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oNp-sc-wb4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oNp-sc-wb4">
                                 <rect key="frame" x="67" y="111" width="240" height="240"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oNp-sc-wb4" firstAttribute="centerX" secondItem="eM2-Wy-QEO" secondAttribute="centerX" id="3Pw-My-4u6"/>
+                            <constraint firstItem="oNp-sc-wb4" firstAttribute="top" secondItem="Z9Q-eK-8So" secondAttribute="bottom" constant="47" id="ZYl-rd-2wA"/>
+                            <constraint firstItem="ODb-nb-LNz" firstAttribute="top" secondItem="oNp-sc-wb4" secondAttribute="bottom" constant="316" id="dox-39-bwM"/>
+                            <constraint firstItem="oNp-sc-wb4" firstAttribute="leading" secondItem="eM2-Wy-QEO" secondAttribute="leadingMargin" constant="51" id="ffW-oN-0rf"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="flagImage" destination="oNp-sc-wb4" id="W5t-7O-wAw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fhw-P3-FpF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

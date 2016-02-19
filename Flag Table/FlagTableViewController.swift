@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Foundation
 
 class FlagTableViewController: UITableViewController {
-
+    
+    let identifier = "flag"
     var countries = ["Brazil", "Canada", "China", "Germany", "Indonesia", "South Africa", "Spain", "United Kingdom", "USA"]
     var images = ["brazil", "canada", "china", "germany", "indonesia", "japan", "southafrica", "spain", "uk", "usa"]
   
@@ -85,11 +87,14 @@ class FlagTableViewController: UITableViewController {
     // MARK: - Navigation
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-
-        let cell = tableView.dequeueReusableCellWithIdentifier("flag", forIndexPath: indexPath)
-        let flagImage = self.countries[indexPath.row]
-        let detailViewController = ((segue.destinationViewController) as! FlagViewController)
-        detailViewController.flagImage = flagImage
+        if segue.identifier == "flag" {
+            let detailViewController = segue.destinationViewController as! FlagViewController
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+            let image = images[indexPath.row]
+            detailViewController.image = flagIcon.image
+        }
+        
+            }
         }
     }
 
